@@ -4,7 +4,7 @@ A portfolio template built with HTML, CSS, and JavaScript.
 
 ## Preview
 
-[Live Demo]
+[Live Demo](https://rexbogani123.github.io/My-Portfolio-/)
 
 ## License
 
