@@ -76,6 +76,29 @@ document.getElementById('btn-theme').addEventListener('click', function () {
 	  resumeButton.style.color = '#ffffff'; // Black text for dark theme
 	}
   });
-  
-  
-  
+
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Hi, I am Rex V. Bogani";
+  const typingElement = document.getElementById("typing-effect");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      typingElement.textContent += text[index];
+      index++;
+      setTimeout(type, 100); // Adjust typing speed (100ms per character)
+    } else {
+      setTimeout(() => {
+        typingElement.textContent = ""; // Clear the text
+        index = 0; // Reset the index
+        type(); // Restart the typing effect
+      }, 1000); // Pause for 1 second before restarting
+    }
+  }
+
+  // Start the typing effect
+  type();
+});
+
+
+
