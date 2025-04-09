@@ -71,9 +71,9 @@ document.getElementById('btn-theme').addEventListener('click', function () {
   
 	// Change the text color of the Resume button based on the theme
 	if (body.classList.contains('bright')) {
-	  resumeButton.style.color = '#ffffff'; // White text for bright theme
+	  // White text for bright theme
 	} else {
-	  resumeButton.style.color = '#ffffff'; // Black text for dark theme
+	  // Black text for dark theme
 	}
   });
 
